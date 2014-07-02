@@ -1,0 +1,13 @@
+name = NT Migrate Files
+description = Migrate files from local server to S3 bucket.
+core = 7.x
+; stylesheets[all][] =
+; scripts[] =
+; files[] =
+dependencies[] = awssdk
+dependencies[] = amazons3
+package = NT
+php = 5.3
+version = 7.x-1.0 
+; configure =
+

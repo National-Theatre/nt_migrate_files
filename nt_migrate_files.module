@@ -1,0 +1,36 @@
+<?php
+/**
+ * @file
+ * nt_migrate_files.module
+ * @copyright The Royal National Theatre
+ * @author John-Paul Drawneek
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function nt_migrate_files_menu() {
+  return array(
+    'admin/config/system/migrate-s3' => array(
+      'title'            => 'Migrate local files to S3',
+      'description'      => 'Migrate local files up to S3 bucket and update the database to keep it in sync.',
+      'page callback'    => 'drupal_get_form',
+      'page arguments'   => array('nt_migrate_files_upload_form'),
+      'access arguments' => array('access administration pages'),
+      'type'             => MENU_NORMAL_ITEM,
+      'file'             => 'nt_migrate_files.batch.inc',
+    ),
+  );
+}
+/**
+ * Implements hook_theme().
+ */
+function nt_migrate_files_theme($existing, $type, $theme, $path) {
+  return array();
+}
+/**
+ * Implements hook_cron().
+ */
+function nt_migrate_files_cron() {
+
+}

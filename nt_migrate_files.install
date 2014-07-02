@@ -1,0 +1,45 @@
+<?php
+/**
+ * @file
+ * nt_migrate_files.install
+ * @copyright The Royal National Theatre
+ * @author John-Paul Drawneek
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function nt_migrate_files_schema() {
+  return array();
+}
+/**
+ * Implements hook_field_schema().
+
+ */
+function nt_migrate_files_field_schema($field) {
+  return array();
+}
+/**
+ * Implements hook_install().
+ */
+function nt_migrate_files_install() {
+
+}
+/**
+ * Implements hook_uninstall().
+ */
+function nt_migrate_files_uninstall() {
+
+}
+/**
+ * Implements hook_enable().
+ */
+function nt_migrate_files_enable() {
+
+}
+/**
+ * Implements hook_disable().
+ */
+function nt_migrate_files_disable() {
+
+}
